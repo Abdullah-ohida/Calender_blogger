@@ -22,6 +22,7 @@ body{
     transform: rotate(-7deg);
     position: relative;
     text-align: center;
+    max-width:100%;
 }
  
 .header{
@@ -34,15 +35,30 @@ body{
     top: -1.5rem;
     left: .7rem;
     z-index: -1;
-    
+    max-width:100%;
 } 
+
+
+.btn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: transparent;
+    cursor: pointer;
+}
 
 .month{
      font-size: 3rem;
     text-transform: uppercase;
     color: white;
     display: block;
-    background-color: rgb(240, 48, 48);
+    background: rgb(240, 48, 48);
+}
+
+.day{
+    display: flex;
+   justify-content: space-between;
+   background: white;
 }
 
 .number{
@@ -50,13 +66,14 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 30vh;
-    font-size: 8rem;
-   
+    font-size: 5rem;
 }
 
 .span{
-    width: 100%;
+    width: 90%;
     height: 11px;
     background-color: rgb(200, 197, 197);
-    margin-top: 1.69rem;
+    position: absolute;
+    top: 87.2%;
+    left: 5%;
 }
